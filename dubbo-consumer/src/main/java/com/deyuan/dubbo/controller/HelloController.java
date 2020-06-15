@@ -20,6 +20,6 @@ public class HelloController {
     private HelloService helloService;
     @GetMapping(value = "/hello")
     public String hello(String name){
-        return "from proviter"+helloService.sayHello(name);
+        return "from provider： "+helloService.sayHello(name);
     }
 }
